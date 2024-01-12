@@ -20,7 +20,7 @@ body {
 
 #section-1 {
     width: 100%;
-    padding: clamp(17px, 8vh, 42px) clamp(50px, 5vw, 57.5px);
+    padding: clamp(17px, 8vh, 42px) 0px;
     background: url(../img/gradient\ 1.png) no-repeat;
     background-size: cover;
     position: relative;
@@ -28,7 +28,7 @@ body {
 }
 
 #frame {
-    margin: 0 auto;
+    margin: 0px clamp(50px, 10vw, 100px);
     position: relative;
     max-width: 1243px;
     border-radius: 35px;
@@ -52,14 +52,16 @@ header {
     font-family: 'DM Sans';
     font-weight: 400;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 23px;
     background: white;
+    padding: 0px 20px;
 }
 
 .header-fixed {
-    width: 100vw;
+    width: 100%;
     position: fixed;
     padding: 10px 20px;
     top: 0px;
@@ -86,7 +88,8 @@ header {
 
 .btns-box {
     display: flex;
-    column-gap: 60px;
+    justify-content: space-around;
+    width: 50%;
 }
 
 #hidden-menu {
@@ -514,7 +517,7 @@ footer {
     cursor: pointer;
 }
 
-@media screen and (max-width: 927px) {
+@media screen and (max-width: 1000px) {
     header {
         justify-content: space-between;
         padding: 0px 20px;
@@ -528,6 +531,10 @@ footer {
     #hidden-menu {
         display: block;
     }
+
+    #corner-img-3 {
+        right: calc(-25px - 2vw);
+    }
 }
 
 @media screen and (max-width: 876px) {
@@ -537,19 +544,11 @@ footer {
     }
 }
 
-@media screen and (max-width: 646px) {
+@media screen and (max-width: 736px) {
     .section-1-box,
     .text-box-1 {
         justify-content: center;
         align-items: center;
         text-align: center;
-    }
-
-    .section-1-box {
-        padding: 0px;
-    }
-
-    #corner-img-3 {
-        right: calc(-25px - 2vw);
     }
 }
