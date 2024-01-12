@@ -20,11 +20,10 @@ body {
 
 #section-1 {
     width: 100%;
-    padding: clamp(17px, 8vh, 42px) clamp(37px, 5vw, 57.5px);
+    padding: clamp(17px, 8vh, 42px) clamp(50px, 5vw, 57.5px);
     background: url(../img/gradient\ 1.png) no-repeat;
     background-size: cover;
     position: relative;
-    overflow: hidden;
     z-index: 10;
 }
 
@@ -544,5 +543,13 @@ footer {
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+
+    .section-1-box {
+        padding: 0px;
+    }
+
+    #corner-img-3 {
+        right: calc(-25px - 2vw);
     }
 }
